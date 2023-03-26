@@ -3,7 +3,7 @@ import './MoviesList.scss';
 const MoviesList = () => {
   return(
     <div>
-      <h1>Movies</h1>
+      <h1 className='heading__L'>Movies</h1>
     </div>
   );
 };

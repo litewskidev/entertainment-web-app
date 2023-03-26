@@ -3,7 +3,7 @@ import './TrendingSlider.scss';
 const TrendingSlider = () => {
   return(
     <div>
-      <h1>Trending</h1>
+      <h1 className='heading__L'>Trending</h1>
     </div>
   );
 };

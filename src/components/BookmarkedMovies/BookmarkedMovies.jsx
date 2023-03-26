@@ -3,7 +3,7 @@ import './BookmarkedMovies.scss';
 const BookmarkedMovies = () => {
   return(
     <div>
-      <h1>Bookmarked Movies</h1>
+      <h1 className='heading__L'>Bookmarked Movies</h1>
     </div>
   );
 };

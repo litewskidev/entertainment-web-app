@@ -1,9 +1,11 @@
+@import '../../styles/settings.scss';
+
 .navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  background-color: hsl(256, 55%, 38%);
+  background-color: $mediumblue;
   max-width: 100%;
   height: 62rem;
   padding: 2rem 0;

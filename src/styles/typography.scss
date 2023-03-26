@@ -1,0 +1,39 @@
+@import './settings.scss';
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.heading__L {
+font-size: 2rem;
+font-weight: 300;
+}
+
+.heading__M {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.heading__S {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.heading__XS {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.body__M {
+  font-size: 0.938rem;
+  font-weight: 300;
+}
+
+.body__S {
+  font-size: 0.813rem;
+  font-weight: 300;
+}

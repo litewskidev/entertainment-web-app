@@ -133,7 +133,7 @@ const initialState = {
     },
 
     {
-      title: "Earth’s Untouched",
+      title: "Earth Untouched",
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/earths-untouched/regular/small.jpg",
@@ -469,7 +469,7 @@ const initialState = {
     },
 
     {
-      title: "Mission: Saturn",
+      title: "Mission Saturn",
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/mission-saturn/regular/small.jpg",

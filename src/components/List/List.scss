@@ -1,3 +1,5 @@
+@import '../../styles/settings.scss';
+
 .list__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -6,17 +8,23 @@
 .list__product {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 14.125rem;
+  margin-bottom: 2rem;
 }
 
 .product__image {
-  margin-right: 2.5rem;
+  margin-right: 2.43rem;
 
   img {
-    width: 20rem;
-    height: 15rem;
+    border-radius: 0.5rem;
+    width: 17.5rem;
+    height: 100%;
   }
 }
 
 .product__description {
   display: flex;
+  gap: 0.5rem;
+  color: rgb(179, 179, 179);
 }

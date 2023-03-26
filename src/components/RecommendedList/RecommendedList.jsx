@@ -1,3 +1,4 @@
+import List from '../List/List';
 import './RecommendedList.scss';
 
 const RecommendedList = () => {
@@ -5,7 +6,7 @@ const RecommendedList = () => {
     <div className='recommended'>
       <h1  className='heading__L'>Recommended for you</h1>
       <div className='recommended__list'>
-
+        <List />
       </div>
     </div>
   );

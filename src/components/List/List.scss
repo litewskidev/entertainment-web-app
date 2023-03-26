@@ -1,0 +1,22 @@
+.list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list__product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__image {
+  margin-right: 2.5rem;
+
+  img {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+
+.product__description {
+  display: flex;
+}

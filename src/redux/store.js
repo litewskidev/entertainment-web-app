@@ -1,7 +1,10 @@
 import { createStore, combineReducers } from "redux";
 import initialState from './initialState';
+import listReducer from "./listRedux";
 
-const subreducers = {};
+const subreducers = {
+  list: listReducer,
+};
 
 const reducer = combineReducers(subreducers);
 

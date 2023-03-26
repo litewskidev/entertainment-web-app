@@ -15,7 +15,6 @@ const Home = () => {
           <Search>Search for movies or TV series</Search>
           <TrendingSlider />
           <RecommendedList />
-          <Button>Login to your account</Button>
         </div>
       </Container>
     </>

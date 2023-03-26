@@ -1,0 +1,12 @@
+@import '../../styles/settings.scss';
+
+.btn {
+  width: 21rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: $red;
+  color: $white;
+  font-family: $font-text;
+  cursor: pointer;
+  padding-bottom: 0.2rem;
+}

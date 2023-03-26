@@ -2,8 +2,11 @@ import './RecommendedList.scss';
 
 const RecommendedList = () => {
   return(
-    <div>
+    <div className='recommended'>
       <h1  className='heading__L'>Recommended for you</h1>
+      <div className='recommended__list'>
+
+      </div>
     </div>
   );
 };

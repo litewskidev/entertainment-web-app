@@ -5,7 +5,7 @@ const Search = props => {
   return(
     <div className='searchbar'>
       <img src={isearch} alt='' />
-      <input type='text' placeholder={props.children} />
+      <input className='heading__M' type='text' placeholder={props.children} />
     </div>
   );
 };

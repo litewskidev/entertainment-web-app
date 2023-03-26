@@ -4,7 +4,6 @@ import Search from '../Search/Search';
 import TrendingSlider from '../TrendingSlider/TrendingSlider';
 import RecommendedList from '../RecommendedList/RecommendedList';
 import './Home.scss';
-import Button from '../Button/Button';
 
 const Home = () => {
   return(

@@ -512,7 +512,10 @@ const initialState = {
       isBookmarked: true,
       isTrending: false
     }
-  ]
+  ],
+
+  searchString: '',
+  
 };
 
 export default initialState;

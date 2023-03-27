@@ -1,14 +1,24 @@
-export const getList = (state) => state.list;
+import { strContains } from '../utils/strContains';
 
-const createActionName = actionName => `app/${actionName}`;
-const UPDATE_LIST = createActionName('UPDATE_LIST');
+//  SELECTORS
+export const getList = ({ list }) => list;
+export const getMovies = ({ list }) => list.filter(card => card.category === 'Movie');
+export const getTv = ({ list }) => list.filter(card => card.category === 'TV Series');
+export const getBookmarked = ({ list }) => list.filter(card => card.isBookmarked === true);
+export const getTrending = ({ list }) => list.filter(card => card.isTrending === true);
+export const getFilteredList = ({ list, searchString}, id) => list.filter(card => card.id === id && strContains(card.title, searchString));
 
-export const updateList = payload => ({ type: UPDATE_LIST, payload });
+//  ACTIONS
+const createActionName = actionName => `app/list/${actionName}`;
+const TOGGLE_BOOKMARK = createActionName('TOGGLE_BOOKMARK');
+
+//  ACTIONS CREATORS
+export const toggleBookmark = payload => ({ type: TOGGLE_BOOKMARK, payload });
 
 const listReducer = (statePart = [], action) => {
   switch (action.type) {
-    case UPDATE_LIST:
-      return [...action.payload];
+    case TOGGLE_BOOKMARK:
+      return statePart.map(card => (card.id === action.payload) ? {...card, isBookmarked: !card.isBookmarked}: card);
     default:
       return statePart;
   };

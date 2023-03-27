@@ -1,9 +1,11 @@
 import { createStore, combineReducers } from "redux";
 import initialState from './initialState';
 import listReducer from "./listRedux";
+import searchReducer from "./searchRedux";
 
 const subreducers = {
   list: listReducer,
+  searchString: searchReducer
 };
 
 const reducer = combineReducers(subreducers);

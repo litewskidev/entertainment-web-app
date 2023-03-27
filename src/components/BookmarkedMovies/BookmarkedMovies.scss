@@ -1,0 +1,16 @@
+.bookmarked__movies__list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bookmarked__movies {
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.bookmarked__movies__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

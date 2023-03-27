@@ -1,0 +1,16 @@
+.movies__list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movies {
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.movies__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

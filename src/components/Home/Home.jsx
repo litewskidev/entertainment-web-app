@@ -1,9 +1,9 @@
 import Container from '../Container/Container';
 import Navbar from '../Navbar/Navbar';
-import Search from '../Search/Search';
 import TrendingSlider from '../TrendingSlider/TrendingSlider';
 import RecommendedList from '../RecommendedList/RecommendedList';
 import './Home.scss';
+import SearchForm from '../SearchForm/SearchForm';
 
 const Home = () => {
   return(
@@ -11,7 +11,7 @@ const Home = () => {
       <Container>
         <Navbar />
         <div>
-          <Search>Search for movies or TV series</Search>
+          <SearchForm>Search for movies or TV series</SearchForm>
           <TrendingSlider />
           <RecommendedList />
         </div>

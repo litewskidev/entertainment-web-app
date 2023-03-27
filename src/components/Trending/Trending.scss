@@ -1,0 +1,10 @@
+.trending {
+  height: 18.438rem;
+  margin-bottom: 2.5rem;
+}
+
+.trending__slider {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}

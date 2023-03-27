@@ -1,0 +1,16 @@
+.bookmarked__tvseries__list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bookmarked__tvseries {
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.bookmarked__tvseries__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

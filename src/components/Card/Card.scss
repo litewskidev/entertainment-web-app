@@ -1,12 +1,13 @@
-.list__trending {
+.list__card {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 14.125rem;
   margin-bottom: 2rem;
 }
 
-.trending__image {
+.card__image {
   margin-right: 2.43rem;
-  position: relative;
 
   img {
     border-radius: 0.5rem;
@@ -15,11 +16,7 @@
   }
 }
 
-.trending__inner {
-  position: absolute;
-}
-
-.trending__description {
+.card__description {
   display: flex;
   gap: 0.5rem;
   color: rgb(179, 179, 179);

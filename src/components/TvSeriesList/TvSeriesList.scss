@@ -1,0 +1,16 @@
+.tvseries__list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tvseries {
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.tvseries__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

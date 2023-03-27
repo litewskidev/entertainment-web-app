@@ -1,6 +1,6 @@
 import Container from '../Container/Container';
 import Navbar from '../Navbar/Navbar';
-import Search from '../Search/Search';
+import SearchForm from '../SearchForm/SearchForm';
 import MoviesList from '../MoviesList/MoviesList';
 import './Movies.scss';
 
@@ -10,7 +10,7 @@ const Movies = () => {
       <Container>
         <Navbar />
         <div>
-          <Search>Search for movies</Search>
+          <SearchForm>Search for movies</SearchForm>
           <MoviesList />
         </div>
       </Container>

@@ -2,11 +2,12 @@ import { strContains } from '../utils/strContains';
 
 //  SELECTORS
 export const getList = ({ list }) => list;
-export const getMovies = ({ list }) => list.filter(card => card.category === 'Movie');
-export const getTv = ({ list }) => list.filter(card => card.category === 'TV Series');
-export const getBookmarked = ({ list }) => list.filter(card => card.isBookmarked === true);
+export const getMovies = ({ list }) => list.filter(card => card.category === "Movie");
+export const getTv = ({ list }) => list.filter(card => card.category === "TV Series");
+export const getBookmarkedMovies = ({ list }) => list.filter(card => card.category === "Movie" && card.isBookmarked === true);
+export const getBookmarkedTvSeries = ({ list }) => list.filter(card => card.category === "TV Series" && card.isBookmarked === true);
 export const getTrending = ({ list }) => list.filter(card => card.isTrending === true);
-export const getFilteredList = ({ list, searchString}, id) => list.filter(card => card.id === id && strContains(card.title, searchString));
+export const getFilteredList = ({ list, searchString }) => list.filter(card => strContains(card.title, searchString));
 
 //  ACTIONS
 const createActionName = actionName => `app/list/${actionName}`;

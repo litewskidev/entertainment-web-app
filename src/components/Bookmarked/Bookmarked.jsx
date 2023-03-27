@@ -1,9 +1,9 @@
 import Container from '../Container/Container';
 import Navbar from '../Navbar/Navbar';
-import Search from '../Search/Search';
 import BookmarkedMovies from '../BookmarkedMovies/BookmarkedMovies';
 import BookmarkedTvSeries from '../BookmarkedTvSeries/BookmarkedTvSeries';
 import './Bookmarked.scss';
+import SearchForm from '../SearchForm/SearchForm';
 
 const Bookmarked = () => {
   return(
@@ -11,7 +11,7 @@ const Bookmarked = () => {
       <Container>
         <Navbar />
         <div>
-          <Search>Search for bookmarked shows</Search>
+          <SearchForm>Search for bookmarked shows</SearchForm>
           <BookmarkedMovies />
           <BookmarkedTvSeries />
         </div>

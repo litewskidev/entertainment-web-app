@@ -1,6 +1,6 @@
 import Container from '../Container/Container';
 import Navbar from '../Navbar/Navbar';
-import Search from '../Search/Search';
+import SearchForm from '../SearchForm/SearchForm';
 import TvSeriesList from '../TvSeriesList/TvSeriesList';
 import './TvSeries.scss';
 
@@ -10,7 +10,7 @@ const TvSeries = () => {
       <Container>
         <Navbar />
         <div>
-          <Search>Search for TV series</Search>
+          <SearchForm>Search for TV series</SearchForm>
           <TvSeriesList />
         </div>
       </Container>

@@ -1,0 +1,11 @@
+.recommended {
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.recommended__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

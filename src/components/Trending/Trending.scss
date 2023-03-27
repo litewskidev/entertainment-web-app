@@ -1,10 +1,14 @@
 .trending {
   height: 18.438rem;
   margin-bottom: 2.5rem;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
 }
 
 .trending__slider {
   display: flex;
-  flex-direction: row;
-  overflow: auto;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }

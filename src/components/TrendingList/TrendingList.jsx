@@ -1,6 +1,6 @@
-import './TrendingSlider.scss';
+import './TrendingList.scss';
 
-const TrendingSlider = ({title, id, year, category, rating}) => {
+const TrendingList = ({title, id, year, category, rating}) => {
   return(
     <div className='list__trending'>
       <div className='trending__image'>
@@ -22,4 +22,4 @@ const TrendingSlider = ({title, id, year, category, rating}) => {
   );
 };
 
-export default TrendingSlider;
+export default TrendingList;

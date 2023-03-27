@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { getTrending } from '../../redux/listRedux';
-import TrendingSlider from '../TrendingSlider/TrendingSlider';
-import './TrendingSlider.scss';
+import TrendingList from '../TrendingList/TrendingList';
+import './Trending.scss';
 
 const Trending = () => {
 
@@ -11,7 +11,7 @@ const Trending = () => {
     <div className='trending'>
       <h1 className='heading__L'>Trending</h1>
       <div className='trending__slider'>
-        {trendingShows.map(trendingShow => <TrendingSlider key={trendingShow.id} {...trendingShow} />)}
+        {trendingShows.map(trendingShow => <TrendingList key={trendingShow.id} {...trendingShow} />)}
       </div>
     </div>
   );

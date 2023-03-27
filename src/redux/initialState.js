@@ -2,6 +2,7 @@ const initialState = {
   list: [
     {
       title: "Beyond Earth",
+      id: 1,
       thumbnail: {
         trending: {
           small: "../../images/thumbnails/beyond-earth/trending/small.jpg",
@@ -22,6 +23,7 @@ const initialState = {
 
     {
       title: "Bottom Gear",
+      id: 2,
       thumbnail: {
         trending: {
           small: "../../images/thumbnails/bottom-gear/trending/small.jpg",
@@ -42,6 +44,7 @@ const initialState = {
 
     {
       title: "Undiscovered Cities",
+      id: 3,
       thumbnail: {
         trending: {
           small: "../../images/thumbnails/undiscovered-cities/trending/small.jpg",
@@ -62,6 +65,7 @@ const initialState = {
 
     {
       title: "1998",
+      id: 4,
       thumbnail: {
         trending: {
           small: "../../images/thumbnails/1998/trending/small.jpg",
@@ -82,6 +86,7 @@ const initialState = {
 
     {
       title: "Dark Side of the Moon",
+      id: 5,
       thumbnail: {
         trending: {
           small: "../../images/thumbnails/dark-side-of-the-moon/trending/small.jpg",
@@ -102,6 +107,7 @@ const initialState = {
 
     {
       title: "The Great Lands",
+      id: 6,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/the-great-lands/regular/small.jpg",
@@ -118,6 +124,7 @@ const initialState = {
 
     {
       title: "The Diary",
+      id: 7,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/the-diary/regular/small.jpg",
@@ -133,7 +140,8 @@ const initialState = {
     },
 
     {
-      title: "Earth Untouched",
+      title: "Earth’s Untouched",
+      id: 8,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/earths-untouched/regular/small.jpg",
@@ -150,6 +158,7 @@ const initialState = {
 
     {
       title: "No Land Beyond",
+      id: 9,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/no-land-beyond/regular/small.jpg",
@@ -166,6 +175,7 @@ const initialState = {
 
     {
       title: "During the Hunt",
+      id: 10,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/during-the-hunt/regular/small.jpg",
@@ -182,6 +192,7 @@ const initialState = {
 
     {
       title: "Autosport the Series",
+      id: 11,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/autosport-the-series/regular/small.jpg",
@@ -198,6 +209,7 @@ const initialState = {
 
     {
       title: "Same Answer II",
+      id: 12,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/same-answer-2/regular/small.jpg",
@@ -214,6 +226,7 @@ const initialState = {
 
     {
       title: "Below Echo",
+      id: 13,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/below-echo/regular/small.jpg",
@@ -230,6 +243,7 @@ const initialState = {
 
     {
       title: "The Rockies",
+      id: 14,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/the-rockies/regular/small.jpg",
@@ -246,6 +260,7 @@ const initialState = {
 
     {
       title: "Relentless",
+      id: 15,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/relentless/regular/small.jpg",
@@ -262,6 +277,7 @@ const initialState = {
 
     {
       title: "Community of Ours",
+      id: 16,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/community-of-ours/regular/small.jpg",
@@ -278,6 +294,7 @@ const initialState = {
 
     {
       title: "Van Life",
+      id: 17,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/van-life/regular/small.jpg",
@@ -294,6 +311,7 @@ const initialState = {
 
     {
       title: "The Heiress",
+      id: 18,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/the-heiress/regular/small.jpg",
@@ -310,6 +328,7 @@ const initialState = {
 
     {
       title: "Off the Track",
+      id: 19,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/off-the-track/regular/small.jpg",
@@ -326,6 +345,7 @@ const initialState = {
 
     {
       title: "Whispering Hill",
+      id: 20,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/whispering-hill/regular/small.jpg",
@@ -342,6 +362,7 @@ const initialState = {
 
     {
       title: "112",
+      id: 21,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/112/regular/small.jpg",
@@ -358,6 +379,7 @@ const initialState = {
 
     {
       title: "Lone Heart",
+      id: 22,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/lone-heart/regular/small.jpg",
@@ -374,6 +396,7 @@ const initialState = {
 
     {
       title: "Production Line",
+      id: 23,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/production-line/regular/small.jpg",
@@ -390,6 +413,7 @@ const initialState = {
 
     {
       title: "Dogs",
+      id: 24,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/dogs/regular/small.jpg",
@@ -406,6 +430,7 @@ const initialState = {
 
     {
       title: "Asia in 24 Days",
+      id: 25,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/asia-in-24-days/regular/small.jpg",
@@ -422,6 +447,7 @@ const initialState = {
 
     {
       title: "The Tasty Tour",
+      id: 26,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/the-tasty-tour/regular/small.jpg",
@@ -438,6 +464,7 @@ const initialState = {
 
     {
       title: "Darker",
+      id: 27,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/darker/regular/small.jpg",
@@ -454,6 +481,7 @@ const initialState = {
 
     {
       title: "Unresolved Cases",
+      id: 28,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/unresolved-cases/regular/small.jpg",
@@ -469,7 +497,8 @@ const initialState = {
     },
 
     {
-      title: "Mission Saturn",
+      title: "Mission: Saturn",
+      id: 29,
       thumbnail: {
         regular: {
           small: "../../images/thumbnails/mission-saturn/regular/small.jpg",

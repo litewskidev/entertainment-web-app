@@ -10,15 +10,11 @@ const SearchForm = props => {
 
   const [searchString, setSearchString] = useState("");
 
-  useEffect(() => {
-    dispatch(search(searchString));
-  }, );
-
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     dispatch(search(searchString));
     setSearchString("");
-  }
+  };
 
   return(
     <form className='searchbar' onSubmit={handleSubmit}>

@@ -8,16 +8,16 @@ const SearchForm = props => {
 
   const dispatch = useDispatch();
 
-  const [searchString, setSearchString] = useState('');
+  const [searchString, setSearchString] = useState("");
 
   useEffect(() => {
     dispatch(search(searchString));
-  },);
+  }, );
 
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(search(searchString));
-    setSearchString('');
+    setSearchString("");
   }
 
   return(

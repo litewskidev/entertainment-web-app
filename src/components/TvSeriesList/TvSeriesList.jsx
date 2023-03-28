@@ -5,7 +5,7 @@ import './TvSeriesList.scss';
 
 const TvSeriesList = () => {
 
-  const tvSeries = useSelector(getTv);
+  const tvSeries = useSelector(state => getTv(state));
 
   return(
     <div className='tvseries'>

@@ -514,7 +514,7 @@ const initialState = {
     }
   ],
 
-  searchString: '',
+  searchString: ""
 
 };
 

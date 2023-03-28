@@ -5,7 +5,7 @@ import './BookmarkedTvSeries.scss';
 
 const BookmarkedTvSeries = () => {
 
-  const bookTvSeries = useSelector(getBookmarkedTvSeries);
+  const bookTvSeries = useSelector(state => getBookmarkedTvSeries(state));
 
   return(
     <div className='bookmarked__tvseries'>

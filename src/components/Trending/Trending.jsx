@@ -5,7 +5,7 @@ import './Trending.scss';
 
 const Trending = () => {
 
-  const trendingShows = useSelector(getTrending);
+  const trendingShows = useSelector(state => getTrending(state));
 
   return(
     <div className='trending'>

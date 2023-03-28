@@ -5,7 +5,7 @@ import './MoviesList.scss';
 
 const MoviesList = () => {
 
-  const movies = useSelector(getMovies);
+  const movies = useSelector(state => getMovies(state));
 
   return(
     <div className='movies'>

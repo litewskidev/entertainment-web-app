@@ -4,6 +4,7 @@
   justify-content: space-between;
   height: 14.125rem;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .card__image {
@@ -20,4 +21,18 @@
   display: flex;
   gap: 0.5rem;
   color: rgb(179, 179, 179);
+}
+
+.inner__card {
+  position: absolute;
+  right: 2.2rem;
+  margin: 1rem;
+}
+
+.bookBtn {
+  padding: 0.5rem;
+  background-color: rgba(31, 31, 31, 0.6);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }

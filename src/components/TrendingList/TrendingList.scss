@@ -1,22 +1,21 @@
 .list__trending {
-  display: flex;
-  height: 14.125rem;
-  margin-bottom: 2rem;
+  position: relative;
 }
 
 .trending__image {
   margin-right: 2.43rem;
-  position: relative;
 
   img {
     border-radius: 0.5rem;
-    width: 17.5rem;
-    height: 100%;
+    width: 27.5rem;
+    aspect-ratio: 16/9;
   }
 }
 
 .trending__inner {
   position: absolute;
+  bottom: 1rem;
+  left: 1rem;
 }
 
 .trending__description {

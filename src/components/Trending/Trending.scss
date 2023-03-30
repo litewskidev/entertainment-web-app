@@ -1,14 +1,19 @@
 .trending {
-  height: 18.438rem;
+  height: 20.438rem;
+  width: 77.5rem;
   margin-bottom: 2.5rem;
+  overflow-x: scroll;
 
   h1 {
     margin-bottom: 2rem;
   }
 }
 
+.trending::-webkit-scrollbar {
+  display: none;
+}
+
 .trending__slider {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
+  display: grid;
+  grid-auto-flow: column;
 }

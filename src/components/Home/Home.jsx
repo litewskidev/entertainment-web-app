@@ -5,7 +5,6 @@ import Trending from '../Trending/Trending';
 import Recommended from '../Recommended/Recommended';
 import './Home.scss';
 
-
 const Home = () => {
   return(
     <>

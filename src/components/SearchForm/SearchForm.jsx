@@ -12,7 +12,7 @@ const SearchForm = props => {
 
   useEffect(() => {
     dispatch(search(searchString));
-  }, );
+  }, []);
 
   const handleSubmit = e => {
     e.preventDefault();

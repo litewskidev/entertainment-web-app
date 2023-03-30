@@ -1,3 +1,6 @@
+//  SELECTORS
+export const getSearchString = ({searchString}) => searchString;
+
 //  ACTIONS
 const createActionName = actionName => `app/search/${actionName}`;
 const UPDATE_SEARCH = createActionName('UPDATE_SEARCH');

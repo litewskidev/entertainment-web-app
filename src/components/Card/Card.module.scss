@@ -31,14 +31,13 @@
 
 .bookBtn {
   padding: 0.5rem;
-  background-color: rgba(31, 31, 31, 0.6);
+  background-color: rgba(31, 31, 31, 0.5);
   border-radius: 50%;
   border: none;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    transition: all 4s;
+  &:hover {
+    transition: all 2s;
     background-color: rgba(255, 255, 255, 0.3);
   }
 }

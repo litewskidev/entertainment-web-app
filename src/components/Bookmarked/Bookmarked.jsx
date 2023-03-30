@@ -1,9 +1,9 @@
 import Container from '../Container/Container';
 import Navbar from '../Navbar/Navbar';
+import SearchForm from '../SearchForm/SearchForm';
 import BookmarkedMovies from '../BookmarkedMovies/BookmarkedMovies';
 import BookmarkedTvSeries from '../BookmarkedTvSeries/BookmarkedTvSeries';
 import './Bookmarked.scss';
-import SearchForm from '../SearchForm/SearchForm';
 
 const Bookmarked = () => {
   return(

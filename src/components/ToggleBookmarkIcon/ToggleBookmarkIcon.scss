@@ -13,8 +13,7 @@
   height: 1.3rem;
   padding-left: 0.2rem;
 
-  &:hover,
-  &:focus {
+  &:hover {
     transition: all 0.5s;
     filter: invert(1);
   }

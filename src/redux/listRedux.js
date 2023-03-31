@@ -7,6 +7,7 @@ export const getTv = ({ list, searchString }) => list.filter(card => card.catego
 export const getBookmarkedMovies = ({ list, searchString }) => list.filter(card => card.category === "Movie" && card.isBookmarked === true && strContains(card.title, searchString));
 export const getBookmarkedTvSeries = ({ list, searchString }) => list.filter(card => card.category === "TV Series" && card.isBookmarked === true && strContains(card.title, searchString));
 export const getTrending = ({ list, searchString }) => list.filter(card => card.isTrending === true && strContains(card.title, searchString));
+export const getBookmarked = ({list, searchString}) => list.filter(card => card.isBookmarked === true && strContains(card.title, searchString));
 
 //  ACTIONS
 const createActionName = actionName => `app/list/${actionName}`;

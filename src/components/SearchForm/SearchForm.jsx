@@ -22,7 +22,7 @@ const SearchForm = props => {
 
   return(
     <form className='searchbar' onSubmit={handleSubmit}>
-      <img src={isearch} alt='' />
+      <button className='searchBtn'><img src={isearch} alt='' /></button>
       <input value={searchString} onChange={e => setSearchString(e.target.value)} className='heading__M' type='text' placeholder={props.children} />
     </form>
   );

@@ -1,30 +1,14 @@
-import { useSelector } from 'react-redux';
-import { getTv } from '../../redux/listRedux';
-import { getSearchString } from '../../redux/searchRedux';
-import { togglePage } from '../../utils/togglePage';
 import Card from '../Card/Card';
-import SearchPage from '../SearchPage/SearchPage';
 import './TvSeriesList.scss';
 
-const TvSeriesList = () => {
-
-  const tvSeries = useSelector(state => getTv(state));
-  const searchString = useSelector(getSearchString);
-  const listTitle = 'TV Series';
-
+const TvSeriesList = ({ tvSeries }) => {
   return(
     <div className='tvseries'>
-      {(togglePage(searchString) !== true) ? (
-        <h1 className='heading__L'>{listTitle}</h1>
-      ) : (<p></p>)}
+      <h1 className='heading__L'>TV Series</h1>
       <div className='tvseries__list'>
-      <div className='tvseries__list__wrapper'>
-        {(togglePage(searchString) !== true) ? (
-          tvSeries.map(show => <Card key={show.id} {...show} />)
-          ) : (
-            <SearchPage list={tvSeries} title={listTitle} />
-          )}
-      </div>
+        <div className='tvseries__list__wrapper'>
+          {tvSeries.map(show => <Card key={show.id} {...show} />)}
+        </div>
       </div>
     </div>
   );

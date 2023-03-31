@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { toggleBookmark } from '../../redux/listRedux';
 import ToggleBookmarkIcon from '../ToggleBookmarkIcon/ToggleBookmarkIcon';
 import clsx from 'clsx';
+import { categoryIcon } from '../../utils/categoryIcon';
 
 const Card = ({title, id, year, category, rating, isBookmarked}) => {
 
@@ -19,9 +20,9 @@ const Card = ({title, id, year, category, rating, isBookmarked}) => {
       </div>
       <div className={clsx(styles.card__description, 'body__S')}>
         <p>{year}</p>
-        <p>•</p>
-        <p>{category}</p>
-        <p>•</p>
+        <p>&#8226;</p>
+        <p><img alt='category icon' src={categoryIcon(category)} />&nbsp;&nbsp;{category}</p>
+        <p>&#8226;</p>
         <p>{rating}</p>
       </div>
       <div className={clsx(styles.card__title, 'heading__XS')}>

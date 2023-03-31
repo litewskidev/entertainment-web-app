@@ -1,3 +1,4 @@
+import { categoryIcon } from '../../utils/categoryIcon';
 import './TrendingList.scss';
 
 const TrendingList = ({title, id, year, category, rating}) => {
@@ -9,9 +10,9 @@ const TrendingList = ({title, id, year, category, rating}) => {
       <div className='trending__inner'>
         <div className='trending__description body__S'>
           <p>{year}</p>
-          <p>•</p>
-          <p>{category}</p>
-          <p>•</p>
+          <p>&#8226;</p>
+          <p><img alt='category icon' src={categoryIcon(category)} />&nbsp;&nbsp;{category}</p>
+          <p>&#8226;</p>
           <p>{rating}</p>
         </div>
         <div className='trending__title heading__S'>

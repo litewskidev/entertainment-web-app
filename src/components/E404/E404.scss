@@ -1,26 +1,34 @@
 .error__wrapper {
   display: flex;
   justify-content: center;
-  padding: 2rem;
-}
+  padding: 5rem 0;
 
-.error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem;
 
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  .error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    span {
+      color: hsl(0, 58%, 47%);
+      font-size: 5rem;
+    }
   }
 
-  p {
-    font-size: 1.5rem;
-  }
-
-  span {
-    color: hsl(0, 67%, 57%);
-    font-size: 5rem;
+  .error__logo{
+    margin-top: 7rem;
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    color: white;
   }
 }

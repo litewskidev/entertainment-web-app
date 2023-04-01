@@ -12,6 +12,7 @@ const TrendingList = ({title, id, year, category, rating, isBookmarked}) => {
   const toggle = () => {
     dispatch(toggleBookmark(id, isBookmarked));
   };
+
   return(
     <div className='list__trending'>
       <div className='trending__image'>

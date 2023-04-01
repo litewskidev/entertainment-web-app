@@ -2,18 +2,17 @@
   display: flex;
   justify-content: center;
   padding: 2rem;
-  height: 100vw;
 }
 
 .error {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 2rem;
 
   h1 {
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   p {
@@ -21,15 +20,7 @@
   }
 
   span {
-    color: hsl(0, 58%, 47%);
+    color: hsl(0, 67%, 57%);
     font-size: 5rem;
   }
-}
-
-.error__logo{
-  margin-top: 6rem;
-  display: flex;
-  gap: 1rem;
-  text-decoration: none;
-  color: white;
 }

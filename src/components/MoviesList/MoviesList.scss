@@ -1,16 +1,11 @@
 .movies__list__wrapper {
   display: flex;
   flex-wrap: wrap;
+  gap: 2.5rem;
 }
 
 .movies {
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 2.375rem;
   }
-}
-
-.movies__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
 }

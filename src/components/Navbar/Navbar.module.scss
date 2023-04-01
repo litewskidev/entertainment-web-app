@@ -4,27 +4,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4.3rem;
+  gap: 4.687rem;
   background-color: $mediumblue;
   border-radius: 1rem;
   min-width: 6rem;
-  max-height: 60rem;
-  padding: 2.2rem 0;
-  margin: 2rem;
-  margin-right: 2.25rem;
+  max-height: 60.5rem;
+  padding-top: 2.213rem;
 }
 
 .navbar__interactive {
   display: flex;
   flex-direction: column;
-  gap: 34.1rem;
+  gap: 33.5rem;
 }
 
 .navbar__icons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.3rem;
+  gap: 2.5rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
 
   img {
     cursor: pointer;
@@ -37,11 +37,13 @@
 
 .navbar__avatar {
   text-align: center;
+  padding-bottom: 2rem;
 
   img {
-  max-width: 50%;
-  border: 0.1rem solid $white;
-  border-radius: 50%;
+    height: 2.5;
+    width: 2.5rem;
+    border: 0.1rem solid $white;
+    border-radius: 50%;
   }
 }
 

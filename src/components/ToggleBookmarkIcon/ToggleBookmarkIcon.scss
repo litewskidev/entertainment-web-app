@@ -1,17 +1,15 @@
-.toggle{
-  display: flex;
+.toggle {
+  padding-top: 0.2rem;
 }
 
 .active {
-  width: 1.3rem;
-  height: 1.3rem;
-  padding: 0 0.1rem;
+  width: 0.729rem;
+  height: 0.875rem;
 }
 
 .inactive {
-  width: 1.3rem;
-  height: 1.3rem;
-  padding: 0 0.1rem;
+  width: 0.729rem;
+  height: 0.875rem;
   transition: all 0.5s;
 
   &:hover {

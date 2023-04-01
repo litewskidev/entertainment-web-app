@@ -1,4 +1,8 @@
 import { Route, Routes } from "react-router-dom";
+import Container from "./components/Container/Container";
+import ContainerInner from "./components/ContainerInner/ContainerInner";
+import Navbar from "./components/Navbar/Navbar";
+import SearchForm from "./components/SearchForm/SearchForm";
 import Home from "./components/Home/Home";
 import Movies from "./components/Movies/Movies";
 import TvSeries from "./components/TvSeries/TvSeries";
@@ -10,15 +14,21 @@ import E404 from "./components/E404/E404";
 const App = () => {
   return(
     <main>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/movies" element={<Movies />} />
-          <Route path="/tvseries" element={<TvSeries />} />
-          <Route path="/bookmarked" element={<Bookmarked />} />
-          <Route path='*' element={<E404 />} />
-        </Routes>
+      <Container>
+        <Navbar />
+        <ContainerInner>
+          <SearchForm>Search for movies or TV series</SearchForm>
+          <Routes>
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/signup" element={<SignUp />} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/movies" element={<Movies />} />
+            <Route exact path="/tvseries" element={<TvSeries />} />
+            <Route exact path="/bookmarked" element={<Bookmarked />} />
+            <Route exact path='*' element={<E404 />} />
+          </Routes>
+        </ContainerInner>
+      </Container>
     </main>
   );
 };

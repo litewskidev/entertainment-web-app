@@ -1,6 +1,3 @@
-import Container from '../Container/Container';
-import Navbar from '../Navbar/Navbar';
-import SearchForm from '../SearchForm/SearchForm';
 import TvSeriesList from '../TvSeriesList/TvSeriesList';
 import SearchPage from '../SearchPage/SearchPage';
 import { useSelector } from 'react-redux';
@@ -17,17 +14,11 @@ const TvSeries = () => {
 
   return(
     <>
-      <Container>
-        <Navbar />
-        <div>
-          <SearchForm>Search for TV series</SearchForm>
-          {(togglePage(searchString) !== true) ? (
-            <TvSeriesList tvSeries={tvSeries} />
-          ) : (
-            <SearchPage list={tvSeries} title={listTitle} />
-          )}
-        </div>
-      </Container>
+      {(togglePage(searchString) !== true) ? (
+        <TvSeriesList tvSeries={tvSeries} />
+      ) : (
+        <SearchPage list={tvSeries} title={listTitle} />
+      )}
     </>
   );
 };

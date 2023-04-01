@@ -1,6 +1,3 @@
-import Container from '../Container/Container';
-import Navbar from '../Navbar/Navbar';
-import SearchForm from '../SearchForm/SearchForm';
 import BookmarkedMovies from '../BookmarkedMovies/BookmarkedMovies';
 import BookmarkedTvSeries from '../BookmarkedTvSeries/BookmarkedTvSeries';
 import SearchPage from '../SearchPage/SearchPage';
@@ -18,22 +15,16 @@ const Bookmarked = () => {
 
   return(
     <>
-      <Container>
-        <Navbar />
+      {(togglePage(searchString) !== true) ? (
         <div>
-          <SearchForm>Search for bookmarked shows</SearchForm>
-          {(togglePage(searchString) !== true) ? (
-            <div>
-              <BookmarkedMovies />
-              <BookmarkedTvSeries />
-            </div>
-          ) : (
-            <div>
-              <SearchPage list={bookmarked} title={listTitle} />
-            </div>
-          )}
+          <BookmarkedMovies />
+          <BookmarkedTvSeries />
         </div>
-      </Container>
+      ) : (
+        <div>
+          <SearchPage list={bookmarked} title={listTitle} />
+        </div>
+      )}
     </>
   );
 };

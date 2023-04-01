@@ -4,6 +4,7 @@ import { toggleBookmark } from '../../redux/listRedux';
 import ToggleBookmarkIcon from '../ToggleBookmarkIcon/ToggleBookmarkIcon';
 import clsx from 'clsx';
 import { categoryIcon } from '../../utils/categoryIcon';
+import { Link } from 'react-router-dom';
 
 const Card = ({title, id, year, category, rating, isBookmarked}) => {
 
@@ -13,10 +14,18 @@ const Card = ({title, id, year, category, rating, isBookmarked}) => {
     dispatch(toggleBookmark(id, isBookmarked));
   };
 
-  return (
+  return(
     <div className={styles.list__card}>
       <div className={styles.card__image}>
-        <img alt={title} src={`${process.env.PUBLIC_URL}/assets/${id}/regular/large.jpg`} />
+        <img className={styles.main__pic} alt={title} src={`${process.env.PUBLIC_URL}/assets/${id}/regular/large.jpg`} />
+        <div>
+          <Link className={styles.link} to="/show">
+            <div className={styles.overlay}>
+              <img className={styles.play__btn} alt='play button' src={`${process.env.PUBLIC_URL}/assets/icons/icon-play.svg`} />
+              <p>Play</p>
+            </div>
+          </Link>
+        </div>
       </div>
       <div className={clsx(styles.card__description, 'body__S')}>
         <p>{year}</p>
@@ -29,7 +38,7 @@ const Card = ({title, id, year, category, rating, isBookmarked}) => {
         <p>{title}</p>
       </div>
       <div className={styles.inner__card}>
-        <button className={styles.bookBtn} onClick={toggle}><ToggleBookmarkIcon active={isBookmarked} /></button>
+        <button className={styles.book__btn} onClick={toggle}><ToggleBookmarkIcon active={isBookmarked} /></button>
       </div>
     </div>
   );

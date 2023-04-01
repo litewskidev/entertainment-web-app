@@ -5,13 +5,13 @@
 .active {
   width: 1.3rem;
   height: 1.3rem;
-  padding-left: 0.2rem;
+  padding: 0 0.1rem;
 }
 
 .inactive {
   width: 1.3rem;
   height: 1.3rem;
-  padding-left: 0.2rem;
+  padding: 0 0.1rem;
   transition: all 0.5s;
 
   &:hover {

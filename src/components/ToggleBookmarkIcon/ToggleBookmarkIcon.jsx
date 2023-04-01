@@ -11,7 +11,7 @@ const ToggleBookmarkIcon = ({ active }) => {
         <img alt='active icon' src={activeMark} className='active' />
       ) : (
         <img alt='inactive icon' src={inactiveMark} className='inactive' />
-      )};
+      )}
     </div>
   );
 };

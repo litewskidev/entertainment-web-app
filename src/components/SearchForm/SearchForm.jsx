@@ -2,23 +2,23 @@ import './SearchForm.scss';
 import isearch from '../../images/icon-search.svg';
 import { useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { search } from '../../redux/searchRedux';
 
 const SearchForm = props => {
 
   const dispatch = useDispatch();
-
   const [searchString, setSearchString] = useState("");
-
-  useEffect(() => {
-    dispatch(search(searchString));
-  }, []);
 
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(search(searchString));
     setSearchString("");
   };
+
+  useEffect(() => {
+    dispatch(search(searchString));
+  }, [useLocation().pathname]);
 
   return(
     <form className='searchbar' onSubmit={handleSubmit}>

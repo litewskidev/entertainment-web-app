@@ -28,6 +28,10 @@
 
   img {
     cursor: pointer;
+
+    &:hover {
+      filter: hue-rotate(130deg);
+    }
   }
 }
 

@@ -16,17 +16,17 @@ const Card = ({title, id, year, category, rating, isBookmarked}) => {
 
   return(
     <div className={styles.list__card}>
-      <div className={styles.card__image}>
-        <img className={styles.main__pic} alt={title} src={`${process.env.PUBLIC_URL}/assets/${id}/regular/large.jpg`} />
-        <div>
-          <Link className={styles.link} to="/show">
+      <Link className={styles.link} to="/show">
+        <div className={styles.card__image}>
+          <img className={styles.main__pic} alt={title} src={`${process.env.PUBLIC_URL}/assets/${id}/regular/large.jpg`} />
+          <div>
             <div className={styles.overlay}>
               <img className={styles.play__btn} alt='play button' src={`${process.env.PUBLIC_URL}/assets/icons/icon-play.svg`} />
               <p>Play</p>
             </div>
-          </Link>
+          </div>
         </div>
-      </div>
+      </Link>
       <div className={clsx(styles.card__description, 'body__S')}>
         <p>{year}</p>
         <p>&#8226;</p>

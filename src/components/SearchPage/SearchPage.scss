@@ -18,3 +18,10 @@
       color: hsl(0, 62%, 62%);
     }
 }
+
+
+@media screen and (max-width: 480px) {
+  .search__page__list {
+    gap: 1.4rem;
+  }
+}

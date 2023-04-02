@@ -19,12 +19,10 @@ const TrendingList = ({title, id, year, category, rating, isBookmarked}) => {
       <div className='trending__image'>
         <img alt={title} src={`${process.env.PUBLIC_URL}/assets/${id}/trending/large.jpg`} />
         <div>
-
-            <div className='overlay'>
-              <img className='play__btn' alt='play button' src={`${process.env.PUBLIC_URL}/assets/icons/icon-play.svg`} />
-              <p>Play</p>
-            </div>
-
+          <div className='overlay'>
+            <img className='play__btn' alt='play button' src={`${process.env.PUBLIC_URL}/assets/icons/icon-play.svg`} />
+            <p>Play</p>
+          </div>
         </div>
       </div>
       </Link>

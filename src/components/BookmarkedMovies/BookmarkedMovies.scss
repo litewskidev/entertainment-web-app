@@ -9,3 +9,9 @@
     margin-bottom: 2.375rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .bookmarked__movies__list__wrapper {
+    gap: 1.4rem;
+  }
+}

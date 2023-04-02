@@ -1,6 +1,6 @@
 .trending {
   height: 18.438;
-  width: 79.75rem;
+  max-width: 79.45rem;
   margin-bottom: 2.5rem;
   overflow-x: scroll;
 
@@ -17,4 +17,11 @@
   display: grid;
   grid-auto-flow: column;
   gap: 2.5rem;
+}
+
+
+@media screen and (max-width: 480px) {
+  .trending__slider {
+    gap: 1rem;
+  }
 }

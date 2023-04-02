@@ -4,25 +4,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4.687rem;
+  gap: 4.5rem;
   background-color: $mediumblue;
   border-radius: 1rem;
   min-width: 6rem;
-  max-height: 60.5rem;
+  height: 60.3rem;
   padding-top: 2.213rem;
 }
 
 .navbar__interactive {
   display: flex;
   flex-direction: column;
-  gap: 33.5rem;
+  gap: 34.2rem;
 }
 
 .navbar__icons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2.3rem;
   min-width: 1.25rem;
   min-height: 1.25rem;
 
@@ -30,14 +30,13 @@
     cursor: pointer;
 
     &:hover {
-      filter: hue-rotate(130deg);
+      filter: hue-rotate(130deg) brightness(1.5);
     }
   }
 }
 
 .navbar__avatar {
   text-align: center;
-  padding-bottom: 2rem;
 
   img {
     height: 2.5;
@@ -49,4 +48,57 @@
 
 .linkActive {
   filter: brightness(3);
+}
+
+.avatarActive {
+  filter: brightness(1.5);
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .navbar, .navbar__interactive, .navbar__icons {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .navbar {
+    padding: 1.563rem;
+    gap: 13.563rem;
+    height: 4.5rem;
+    width: 100%;
+  }
+
+  .navbar__icons {
+    gap: 2rem;
+  }
+
+  .navbar__interactive {
+    gap: 12.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar, .navbar__interactive, .navbar__icons {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .navbar {
+    border-radius: 0;
+    padding: 1.125rem 1rem;
+    gap: 5rem;
+    height: 3.5rem;
+    width: 100%;
+  }
+
+  .navbar__icons {
+    min-width: 1rem;
+    min-height: 1rem;
+    gap: 1.5rem;
+  }
+
+  .navbar__interactive {
+    gap: 5rem;
+  }
 }

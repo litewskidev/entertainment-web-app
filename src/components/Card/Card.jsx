@@ -1,10 +1,10 @@
 import styles from './Card.module.scss';
+import clsx from 'clsx';
 import { useDispatch } from 'react-redux';
 import { toggleBookmark } from '../../redux/listRedux';
-import ToggleBookmarkIcon from '../ToggleBookmarkIcon/ToggleBookmarkIcon';
-import clsx from 'clsx';
 import { categoryIcon } from '../../utils/categoryIcon';
 import { Link } from 'react-router-dom';
+import ToggleBookmarkIcon from '../ToggleBookmarkIcon/ToggleBookmarkIcon';
 
 const Card = ({title, id, year, category, rating, isBookmarked}) => {
 

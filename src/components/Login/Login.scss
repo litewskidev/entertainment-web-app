@@ -1,0 +1,59 @@
+@import '../../styles/settings.scss';
+
+.login__wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5.125rem;
+  margin-top: -5rem;
+
+  .login__form__container {
+    padding: 2rem;
+    width: 25rem;
+    height: 23.313rem;
+    display: flex;
+    flex-direction: column;
+    background: $mediumblue;
+    border-radius: 1.25rem;
+
+    input {
+      background: $mediumblue;
+      color: white;
+      outline: none;
+      border: none;
+      border-bottom: 0.1rem solid $lightblue;
+      padding-bottom: 1.063rem;
+      padding-left: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .login__btn {
+      text-align: center;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .link {
+      color: $red;
+      text-decoration: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .login__form__container {
+    max-width: 20.438rem;
+    max-height: 22.813rem;
+  }
+}

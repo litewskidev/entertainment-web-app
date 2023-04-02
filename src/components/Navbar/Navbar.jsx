@@ -28,9 +28,11 @@ const Navbar = () => {
             <img src={ibookmark} alt='icon' />
           </NavLink>
         </nav>
+        <NavLink className={({ isActive }) => isActive ? styles.avatarActive : undefined} to='/login'>
         <div className={styles.navbar__avatar}>
           <img src={avatar} alt='avatar' />
         </div>
+        </NavLink>
       </div>
     </div>
   );

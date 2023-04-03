@@ -21,7 +21,7 @@ const SearchForm = props => {
 
   return(
     <form className='searchbar' onSubmit={handleSubmit}>
-      <button className='searchBtn'><img src={isearch} alt='' /><p>search</p></button>
+      <button className='searchBtn'><img src={isearch} alt='' /></button>
       <input value={searchString} onChange={e => setSearchString(e.target.value)} className='heading__M' type='text' placeholder={props.children} />
     </form>
   );

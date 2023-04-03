@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/entertainment-web-app/static/css/main.cad728d4.css",
-    "main.js": "/entertainment-web-app/static/js/main.9f46c73e.js",
+    "main.css": "/entertainment-web-app/static/css/main.c021fdce.css",
+    "main.js": "/entertainment-web-app/static/js/main.83d768b4.js",
     "index.html": "/entertainment-web-app/index.html",
     "static/media/icon-nav-bookmark.svg": "/entertainment-web-app/static/media/icon-nav-bookmark.a564501ebcbde752ebe044260a9206b8.svg",
     "static/media/icon-nav-movies.svg": "/entertainment-web-app/static/media/icon-nav-movies.c347442f9a6fd2201f1abf8819aa4ef6.svg",
@@ -9,11 +9,11 @@
     "static/media/icon-search.svg": "/entertainment-web-app/static/media/icon-search.cbc8d670ebd27b023c9868d5850d79c5.svg",
     "static/media/logo.svg": "/entertainment-web-app/static/media/logo.7d4aedc9f44f15655a966567c57a1f37.svg",
     "static/media/icon-nav-tv-series.svg": "/entertainment-web-app/static/media/icon-nav-tv-series.c22fe1629b446365f6f7829a014453f8.svg",
-    "main.cad728d4.css.map": "/entertainment-web-app/static/css/main.cad728d4.css.map",
-    "main.9f46c73e.js.map": "/entertainment-web-app/static/js/main.9f46c73e.js.map"
+    "main.c021fdce.css.map": "/entertainment-web-app/static/css/main.c021fdce.css.map",
+    "main.83d768b4.js.map": "/entertainment-web-app/static/js/main.83d768b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.cad728d4.css",
-    "static/js/main.9f46c73e.js"
+    "static/css/main.c021fdce.css",
+    "static/js/main.83d768b4.js"
   ]
 }

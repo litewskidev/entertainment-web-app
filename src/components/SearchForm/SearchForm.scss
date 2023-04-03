@@ -4,7 +4,7 @@
   display: flex;
   gap: 1rem;
   padding-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.9rem;
   width: 75rem;
 
   .searchBtn{
@@ -12,6 +12,10 @@
     border: none;
     padding: 0;
     cursor: pointer;
+
+    p {
+      display: none;
+    }
   }
 
   input {
@@ -20,6 +24,7 @@
     border: none;
     outline: none;
     color: white;
+    font-size: 1.36rem;
 
     &:focus {
       border-bottom: 1px solid white;

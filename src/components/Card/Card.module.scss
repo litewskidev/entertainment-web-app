@@ -94,17 +94,18 @@
   }
 }
 
+// -------------------------- MEDIA -------------------------------
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 520px) and (max-width: 1024px) {
 
-  .list__card {
-    height: 9.625rem;
+    .list__card {
+    height: 12rem;
     margin-bottom: -0.5rem;
   }
 
   .main__pic {
-    max-width: 10.25rem;
-    max-height: 6.875rem;
+    max-width: 13.75rem;
+    max-height: 8.75rem;
   }
 
   .overlay {
@@ -113,8 +114,38 @@
   }
 
   .card__image {
-    position: relative;
-    cursor: pointer;
+
+    &:hover .overlay {
+      opacity: 0;
+      display: none;
+    }
+
+    &:hover::after {
+      display: none;
+      opacity: 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 519px) {
+
+  .list__card {
+    height: 9.625rem;
+    margin-bottom: -0.5rem;
+  }
+
+  .main__pic {
+    max-width: 10.5rem;
+    max-height: 6.9rem;
+  }
+
+  .overlay {
+    display: none;
+    right: 1rem;
+  }
+
+  .card__image {
 
     &:hover .overlay {
       opacity: 0;
@@ -129,5 +160,18 @@
 
   .card__title p {
     font-size: 1rem;
+  }
+
+  .card__description {
+    gap: 0.35rem !important;
+
+    p {
+      font-size: 0.688rem;
+    }
+  }
+
+  .inner__card {
+    right: 0.5rem;
+    top: 0.5rem;
   }
 }

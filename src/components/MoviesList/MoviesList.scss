@@ -10,9 +10,22 @@
   }
 }
 
+// -------------------------- MEDIA -------------------------------
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 520px) and (max-width: 1024px) {
+
   .movies__list__wrapper {
-    gap: 1.4rem;
+    gap: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .movies__list__wrapper {
+    gap: 1rem;
+  }
+
+  .movies h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 }

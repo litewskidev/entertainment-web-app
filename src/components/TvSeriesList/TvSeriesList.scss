@@ -10,9 +10,23 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+// -------------------------- MEDIA -------------------------------
+
+@media screen and (min-width: 520px) and (max-width: 1024px) {
+
   .tvseries__list__wrapper {
-    gap: 1.4rem;
+    gap: 1.3rem;
   }
 }
 
+@media screen and (max-width: 519px) {
+
+  .tvseries__list__wrapper {
+    gap: 1rem;
+  }
+
+  .tvseries h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+}

@@ -11,7 +11,7 @@ import './styles/typography.scss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/entertainment-web-app'>
       <Provider store={store}>
         <App />
       </Provider>

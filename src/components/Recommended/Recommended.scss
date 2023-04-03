@@ -3,3 +3,13 @@
     margin-bottom: 2rem;
   }
 }
+
+// -------------------------- MEDIA -------------------------------
+
+@media screen and (max-width: 519px) {
+  
+  .recommended h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+}

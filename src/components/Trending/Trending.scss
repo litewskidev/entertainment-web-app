@@ -1,27 +1,90 @@
+@import '../../styles/settings.scss';
+
 .trending {
   height: 18.438;
-  max-width: 79.45rem;
-  margin-bottom: 2.5rem;
-  overflow-x: scroll;
+  max-width: 148.4rem;
+  margin-bottom: 1.16rem;
 
   h1 {
     margin-bottom: 1.563rem;
   }
 }
 
-.trending::-webkit-scrollbar {
-  display: none;
+.trending__slider::-webkit-scrollbar {
+  width: 2em;
+  height: 1em;
+}
+
+.trending__slider::-webkit-scrollbar-track {
+  background: $darkblue;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.trending__slider::-webkit-scrollbar-thumb {
+  background: $darkblue;
+  border: 0.25em solid $darkblue;
+  border-radius: 100vw;
+}
+
+.trending__slider::-webkit-scrollbar-thumb:hover {
+  background: hsl(227, 9%, 48%);
 }
 
 .trending__slider {
   display: grid;
   grid-auto-flow: column;
+  overflow-x: scroll;
   gap: 2.5rem;
+  cursor: grab;
 }
 
+// -------------------------- MEDIA -------------------------------
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1442px) and (max-width: 1921px) {
+
+  .trending {
+    max-width: 109.50rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1441px) {
+
+  .trending {
+    max-width: 79.50rem;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 1024px) {
+
+  .trending {
+    max-width: 79.50rem;
+  }
+  .trending__slider {
+    margin-right: -1.5rem;
+  }
+
+  .trending__slider::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 519px) {
+
+  .trending {
+    max-width: 79.50rem;
+  }
+
+  .trending__slider::-webkit-scrollbar {
+    display: none;
+  }
+
   .trending__slider {
     gap: 1rem;
+  }
+
+  .trending h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 }

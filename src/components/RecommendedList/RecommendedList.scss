@@ -6,8 +6,18 @@
   gap: 2.5rem;
 }
 
-@media screen and (max-width: 480px) {
+// -------------------------- MEDIA -------------------------------
+
+@media screen and (min-width: 520px) and (max-width: 1024px) {
+
   .list__wrapper {
-    gap: 1.4rem;
+    gap: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  
+  .list__wrapper {
+    gap: 1.3rem;
   }
 }

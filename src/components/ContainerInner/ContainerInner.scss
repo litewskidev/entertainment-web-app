@@ -5,7 +5,16 @@
   padding-right: 0.25rem;
 }
 
-@media screen and (max-width: 480px) {
+// -------------------------- MEDIA -------------------------------
+
+@media screen and (min-width: 520px) and (max-width: 1024px) {
+  
+  .container__inner {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 519px) {
 
   .container__inner {
     padding: 0 0 0 1rem;

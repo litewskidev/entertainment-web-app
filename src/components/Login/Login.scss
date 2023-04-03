@@ -50,8 +50,14 @@
   }
 }
 
+// -------------------------- MEDIA -------------------------------
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 519px) {
+  
+  .login__wrapper{
+    margin-top: -2rem;
+  }
+
   .login__form__container {
     max-width: 20.438rem;
     max-height: 22.813rem;

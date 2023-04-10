@@ -16,13 +16,15 @@
 
   .bookmarked__movies__list__wrapper {
     gap: 1.3rem;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 519px) {
-  
+
   .bookmarked__movies__list__wrapper {
     gap: 1rem;
+    justify-content: center;
   }
 
   .bookmarked__movies h1 {
